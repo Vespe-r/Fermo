@@ -1322,14 +1322,12 @@ textarea {
 	height: 0.2in;
 	cursor: pointer;
 	flex-shrink: 0;
-	margin-left: 6px;
 }
 #emojiTB {
 	width: 0.2in;
 	height: 0.2in;
 	cursor: pointer;
 	flex-shrink: 0;
-	margin-left: 6px;
 }
 #gifTB {
 	width: 0.2in;
@@ -2336,16 +2334,13 @@ span.instanceStatus {
 }
 #typebox {
 	position: relative;
-	margin: -10px 0px;
+	/* margin: 0px 10px 0px 10px; */
 	flex-grow: 1;
 	width: 1px;
-	margin-left: 0.06in;
 	white-space: preserve-breaks;
 	flex-shrink: 1;
 	text-wrap: auto;
 	overflow-y: auto;
-	margin-right: 0.03in;
-	padding: 10px 0;
 }
 #typebox:not([contenteditable="false"]):empty:before,
 #typebox:not([contenteditable="false"]):has(span:only-child:empty):before {
@@ -2362,6 +2357,7 @@ span.instanceStatus {
 	display: flex;
 	flex-direction: row;
 	position: relative;
+	gap: 10px;
 }
 
 .searchBox:empty {
@@ -4213,6 +4209,7 @@ fieldset input[type="radio"] {
 	display: none;
 }
 
+
 @media screen and (max-width: 1000px) {
 	#sideContainDiv {
 		position: relative;
@@ -4258,6 +4255,11 @@ fieldset input[type="radio"] {
 	}
 }
 
+@media screen and (min-width: 600px) {
+	#mobileSend {
+		display: none !important;
+	}
+}
 @media screen and (max-width: 600px) {
 	.searching {
 		position: absolute;
